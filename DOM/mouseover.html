@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function roolover() {
+            var homeImage = document.getElementById("home");
+            homeImage.onmouseover = mouseOver;
+            homeImage.onmouseout = mouseOut;
+        }
+
+        function mouseOver() {
+            this.src = "box2.png";
+        }
+
+        function mouseOut() {
+            this.src = "box1.png";
+        }
+
+    </script>
+</head>
+<body onload="roolover()">
+    <!--<img id="home" name="img_home" src="box1.png" alt="Home"-->
+         <!--onmouseover="window.document.img_home.src='box2.png'"-->
+         <!--onmouseout="window.document.img_home.src='box1.png'">-->
+
+    <img id="home" name="img_home" src="box1.png">
+</body>
+</html>

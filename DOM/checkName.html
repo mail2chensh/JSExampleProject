@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Name</title>
+    <script type="text/javascript">
+        function onSubmitInfo() {
+            if (document.forms[0].nameField.value.length == 0) {
+                alert("Name is required.");
+                return false;
+            } else {
+                alert("hello " + document.forms[0].nameField.value);
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>A Basie Form Example</h1>
+    <form action="#">
+        <p>
+            <label>
+                Name:(Required)
+                <input type="text" name="nameField" />
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Submit Query" onclick="return onSubmitInfo();" />
+        </p>
+    </form>
+</body>
+</html>

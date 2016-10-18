@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select change</title>
+    <script type="text/javascript">
+        function starSelectChange() {
+            alert(document.forms["starForm"].starType.value);
+        }
+    </script>
+</head>
+<body>
+    <form action="" id="starForm">
+        <select name="starType" id="starSelect" onchange="return starSelectChange();">
+            <option selected="selected"></option>
+            <option value="Aquila">Aquila</option>
+            <option value="Centaurus">Centaurus</option>
+            <option value="Major">Major</option>
+            <option value="Corona Borealis">Corona Borealis</option>
+            <option value="Lyra">Lyra</option>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var cookName = "testCookie";
+        var cookVal = "testValue";
+
+        var date = new Date();
+        date.setTime(date.getTime()+604800000);
+        var expireDate = date.toGMTString();
+
+        var path = ";path=/";
+
+        var domain = ";domain=braingia.org";
+
+        var myCookie = cookName + "=" + cookVal
+                + ";expires=" + expireDate + path  ;
+        document.cookie = myCookie;
+    </script>
+
+    <!--<script type="text/javascript">-->
+        <!--var cookieArr = document.cookie.split(";");-->
+        <!--var cookieArrCount = cookieArr.length;-->
+        <!--for (var i = 0; i < cookieArrCount; i++) {-->
+            <!--alert(cookieArr[i]);-->
+        <!--}-->
+    <!--</script>-->
+
+</head>
+<body>
+
+</body>
+</html>

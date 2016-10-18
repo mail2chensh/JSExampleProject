@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Show</title>
+    <script type="text/javascript">
+
+        var count = 4;
+
+        function onPrevious() {
+            var image = document.getElementById("slideImage");
+            var index = image.name.split("_")[1];
+            if (index == 0) {
+                index = count - 1;
+            } else {
+                index--;
+            }
+            image.name = "image_" + index;
+            image.src = "box" + (index + 1) + ".png";
+        }
+        
+        function onNext() {
+            var image = document.getElementById("slideImage");
+            var index = image.name.split("_")[1];
+            if (index == count -1) {
+                index = 0;
+            } else {
+                index++;
+            }
+            image.name = "image_" + index;
+            image.src = "box" + (index + 1) + ".png";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="return onPrevious();">Previous</button>
+    <button onclick="return onNext();">Next</button>
+    <br /><br />
+    <img id="slideImage" name="image_0" src="box1.png">
+</body>
+</html>

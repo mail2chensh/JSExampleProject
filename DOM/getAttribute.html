@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function showAttributes(e) {
+            var e = document.getElementById("braingialink");
+            var elemList = "";
+            for (var element in e) {
+                var attrib = e.getAttribute(element);
+                elemList = elemList + element + ": " + attrib + "\n";
+            }
+            alert(elemList);
+            console.log(elemList);
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="return showAttributes();" id="braingialink">click here</a>
+</body>
+</html>

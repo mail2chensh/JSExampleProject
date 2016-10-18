@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>get by id</title>
+        <script type="text/javascript">
+            function checkhref() {
+//                var a1 = document.getElementById("w3link");
+//                alert(a1.href);
+                var p1 = document.getElementById("sometext");
+                alert(p1.innerHTML);
+                p1.innerHTML = "Changed Text";
+            }
+        </script>
+    </head>
+
+    <body onload="checkhref()">
+        <p id="sometext">Here's some text.</p>
+        <p id="moretext">Here's more text</p>
+        <p id="linkp">Link to the <a id="w3link" href="http://www.baidu.com">here w3c</a></p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tag Name</title>
+    <script type="text/javascript">
+        function  changColors() {
+            var tdArr = document.getElementsByTagName("td");
+            var length = tdArr.length;
+            for (var i = 0; i < length; i++) {
+                tdArr[i].style.backgroundColor = "#aaabba";
+            }
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Left column</td>
+            <td>Right column</td>
+        </tr>
+        <tr>
+            <td>Left column</td>
+            <td>Right column</td>
+        </tr>
+        <tr>
+            <td>Left column</td>
+            <td>Right column</td>
+        </tr>
+    </table>
+    <a href="#" onclick="return changColors();">Click to Change Colors</a>
+</body>
+</html>
